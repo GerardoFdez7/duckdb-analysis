@@ -1,0 +1,351 @@
+tamano,consulta,fuente,repeticion,fase,segundos
+1_mes (2024-01),Q1_conteo_total,parquet,1,frio,0.032545
+1_mes (2024-01),Q1_conteo_total,parquet,2,caliente,0.032721
+1_mes (2024-01),Q1_conteo_total,parquet,3,caliente,0.035203
+1_mes (2024-01),Q1_conteo_total,parquet,4,caliente,0.031950
+1_mes (2024-01),Q1_conteo_total,parquet,5,caliente,0.026786
+1_mes (2024-01),Q1_conteo_total,tabla,1,frio,0.025303
+1_mes (2024-01),Q1_conteo_total,tabla,2,caliente,0.003087
+1_mes (2024-01),Q1_conteo_total,tabla,3,caliente,0.002691
+1_mes (2024-01),Q1_conteo_total,tabla,4,caliente,0.002740
+1_mes (2024-01),Q1_conteo_total,tabla,5,caliente,0.002612
+1_mes (2024-01),Q2_agregacion_por_mes,parquet,1,frio,0.116468
+1_mes (2024-01),Q2_agregacion_por_mes,parquet,2,caliente,0.094476
+1_mes (2024-01),Q2_agregacion_por_mes,parquet,3,caliente,0.087377
+1_mes (2024-01),Q2_agregacion_por_mes,parquet,4,caliente,0.093564
+1_mes (2024-01),Q2_agregacion_por_mes,parquet,5,caliente,0.094831
+1_mes (2024-01),Q2_agregacion_por_mes,tabla,1,frio,0.109356
+1_mes (2024-01),Q2_agregacion_por_mes,tabla,2,caliente,0.033390
+1_mes (2024-01),Q2_agregacion_por_mes,tabla,3,caliente,0.040932
+1_mes (2024-01),Q2_agregacion_por_mes,tabla,4,caliente,0.037298
+1_mes (2024-01),Q2_agregacion_por_mes,tabla,5,caliente,0.031235
+1_mes (2024-01),Q3_promedio_por_tipo,parquet,1,frio,0.130964
+1_mes (2024-01),Q3_promedio_por_tipo,parquet,2,caliente,0.083135
+1_mes (2024-01),Q3_promedio_por_tipo,parquet,3,caliente,0.080597
+1_mes (2024-01),Q3_promedio_por_tipo,parquet,4,caliente,0.077250
+1_mes (2024-01),Q3_promedio_por_tipo,parquet,5,caliente,0.081791
+1_mes (2024-01),Q3_promedio_por_tipo,tabla,1,frio,0.083787
+1_mes (2024-01),Q3_promedio_por_tipo,tabla,2,caliente,0.011620
+1_mes (2024-01),Q3_promedio_por_tipo,tabla,3,caliente,0.015026
+1_mes (2024-01),Q3_promedio_por_tipo,tabla,4,caliente,0.015667
+1_mes (2024-01),Q3_promedio_por_tipo,tabla,5,caliente,0.014270
+1_mes (2024-01),Q4_distribucion_por_hora,parquet,1,frio,0.230643
+1_mes (2024-01),Q4_distribucion_por_hora,parquet,2,caliente,0.179121
+1_mes (2024-01),Q4_distribucion_por_hora,parquet,3,caliente,0.182192
+1_mes (2024-01),Q4_distribucion_por_hora,parquet,4,caliente,0.210148
+1_mes (2024-01),Q4_distribucion_por_hora,parquet,5,caliente,0.192821
+1_mes (2024-01),Q4_distribucion_por_hora,tabla,1,frio,0.115556
+1_mes (2024-01),Q4_distribucion_por_hora,tabla,2,caliente,0.015692
+1_mes (2024-01),Q4_distribucion_por_hora,tabla,3,caliente,0.014832
+1_mes (2024-01),Q4_distribucion_por_hora,tabla,4,caliente,0.017200
+1_mes (2024-01),Q4_distribucion_por_hora,tabla,5,caliente,0.019251
+1_mes (2024-01),Q5_top_zonas,parquet,1,frio,0.081509
+1_mes (2024-01),Q5_top_zonas,parquet,2,caliente,0.077828
+1_mes (2024-01),Q5_top_zonas,parquet,3,caliente,0.082665
+1_mes (2024-01),Q5_top_zonas,parquet,4,caliente,0.073062
+1_mes (2024-01),Q5_top_zonas,parquet,5,caliente,0.096300
+1_mes (2024-01),Q5_top_zonas,tabla,1,frio,0.077002
+1_mes (2024-01),Q5_top_zonas,tabla,2,caliente,0.008785
+1_mes (2024-01),Q5_top_zonas,tabla,3,caliente,0.010826
+1_mes (2024-01),Q5_top_zonas,tabla,4,caliente,0.009230
+1_mes (2024-01),Q5_top_zonas,tabla,5,caliente,0.010285
+1_mes (2024-01),Q6_percentiles_propina,parquet,1,frio,0.634197
+1_mes (2024-01),Q6_percentiles_propina,parquet,2,caliente,0.431986
+1_mes (2024-01),Q6_percentiles_propina,parquet,3,caliente,0.401640
+1_mes (2024-01),Q6_percentiles_propina,parquet,4,caliente,0.368067
+1_mes (2024-01),Q6_percentiles_propina,parquet,5,caliente,0.342413
+1_mes (2024-01),Q6_percentiles_propina,tabla,1,frio,0.455612
+1_mes (2024-01),Q6_percentiles_propina,tabla,2,caliente,0.301945
+1_mes (2024-01),Q6_percentiles_propina,tabla,3,caliente,0.347934
+1_mes (2024-01),Q6_percentiles_propina,tabla,4,caliente,0.380255
+1_mes (2024-01),Q6_percentiles_propina,tabla,5,caliente,0.335236
+1_mes (2024-01),Q7_filtro_selectivo,parquet,1,frio,0.097731
+1_mes (2024-01),Q7_filtro_selectivo,parquet,2,caliente,0.101566
+1_mes (2024-01),Q7_filtro_selectivo,parquet,3,caliente,0.102364
+1_mes (2024-01),Q7_filtro_selectivo,parquet,4,caliente,0.081583
+1_mes (2024-01),Q7_filtro_selectivo,parquet,5,caliente,0.087786
+1_mes (2024-01),Q7_filtro_selectivo,tabla,1,frio,0.066440
+1_mes (2024-01),Q7_filtro_selectivo,tabla,2,caliente,0.007749
+1_mes (2024-01),Q7_filtro_selectivo,tabla,3,caliente,0.007035
+1_mes (2024-01),Q7_filtro_selectivo,tabla,4,caliente,0.007444
+1_mes (2024-01),Q7_filtro_selectivo,tabla,5,caliente,0.007066
+3_meses (2024-01..03),Q1_conteo_total,parquet,1,frio,0.045730
+3_meses (2024-01..03),Q1_conteo_total,parquet,2,caliente,0.044816
+3_meses (2024-01..03),Q1_conteo_total,parquet,3,caliente,0.045390
+3_meses (2024-01..03),Q1_conteo_total,parquet,4,caliente,0.042670
+3_meses (2024-01..03),Q1_conteo_total,parquet,5,caliente,0.043463
+3_meses (2024-01..03),Q1_conteo_total,tabla,1,frio,0.019190
+3_meses (2024-01..03),Q1_conteo_total,tabla,2,caliente,0.003425
+3_meses (2024-01..03),Q1_conteo_total,tabla,3,caliente,0.002999
+3_meses (2024-01..03),Q1_conteo_total,tabla,4,caliente,0.002846
+3_meses (2024-01..03),Q1_conteo_total,tabla,5,caliente,0.003014
+3_meses (2024-01..03),Q2_agregacion_por_mes,parquet,1,frio,0.173603
+3_meses (2024-01..03),Q2_agregacion_por_mes,parquet,2,caliente,0.164979
+3_meses (2024-01..03),Q2_agregacion_por_mes,parquet,3,caliente,0.171167
+3_meses (2024-01..03),Q2_agregacion_por_mes,parquet,4,caliente,0.163190
+3_meses (2024-01..03),Q2_agregacion_por_mes,parquet,5,caliente,0.167044
+3_meses (2024-01..03),Q2_agregacion_por_mes,tabla,1,frio,0.221153
+3_meses (2024-01..03),Q2_agregacion_por_mes,tabla,2,caliente,0.074867
+3_meses (2024-01..03),Q2_agregacion_por_mes,tabla,3,caliente,0.084011
+3_meses (2024-01..03),Q2_agregacion_por_mes,tabla,4,caliente,0.078759
+3_meses (2024-01..03),Q2_agregacion_por_mes,tabla,5,caliente,0.090025
+3_meses (2024-01..03),Q3_promedio_por_tipo,parquet,1,frio,0.228526
+3_meses (2024-01..03),Q3_promedio_por_tipo,parquet,2,caliente,0.178044
+3_meses (2024-01..03),Q3_promedio_por_tipo,parquet,3,caliente,0.167474
+3_meses (2024-01..03),Q3_promedio_por_tipo,parquet,4,caliente,0.142613
+3_meses (2024-01..03),Q3_promedio_por_tipo,parquet,5,caliente,0.149971
+3_meses (2024-01..03),Q3_promedio_por_tipo,tabla,1,frio,0.219397
+3_meses (2024-01..03),Q3_promedio_por_tipo,tabla,2,caliente,0.030404
+3_meses (2024-01..03),Q3_promedio_por_tipo,tabla,3,caliente,0.030487
+3_meses (2024-01..03),Q3_promedio_por_tipo,tabla,4,caliente,0.029381
+3_meses (2024-01..03),Q3_promedio_por_tipo,tabla,5,caliente,0.028183
+3_meses (2024-01..03),Q4_distribucion_por_hora,parquet,1,frio,0.344482
+3_meses (2024-01..03),Q4_distribucion_por_hora,parquet,2,caliente,0.373406
+3_meses (2024-01..03),Q4_distribucion_por_hora,parquet,3,caliente,0.319148
+3_meses (2024-01..03),Q4_distribucion_por_hora,parquet,4,caliente,0.331959
+3_meses (2024-01..03),Q4_distribucion_por_hora,parquet,5,caliente,0.380991
+3_meses (2024-01..03),Q4_distribucion_por_hora,tabla,1,frio,0.271256
+3_meses (2024-01..03),Q4_distribucion_por_hora,tabla,2,caliente,0.037838
+3_meses (2024-01..03),Q4_distribucion_por_hora,tabla,3,caliente,0.041136
+3_meses (2024-01..03),Q4_distribucion_por_hora,tabla,4,caliente,0.043228
+3_meses (2024-01..03),Q4_distribucion_por_hora,tabla,5,caliente,0.042821
+3_meses (2024-01..03),Q5_top_zonas,parquet,1,frio,0.168585
+3_meses (2024-01..03),Q5_top_zonas,parquet,2,caliente,0.132301
+3_meses (2024-01..03),Q5_top_zonas,parquet,3,caliente,0.124517
+3_meses (2024-01..03),Q5_top_zonas,parquet,4,caliente,0.137627
+3_meses (2024-01..03),Q5_top_zonas,parquet,5,caliente,0.125386
+3_meses (2024-01..03),Q5_top_zonas,tabla,1,frio,0.166099
+3_meses (2024-01..03),Q5_top_zonas,tabla,2,caliente,0.017105
+3_meses (2024-01..03),Q5_top_zonas,tabla,3,caliente,0.019416
+3_meses (2024-01..03),Q5_top_zonas,tabla,4,caliente,0.017984
+3_meses (2024-01..03),Q5_top_zonas,tabla,5,caliente,0.019242
+3_meses (2024-01..03),Q6_percentiles_propina,parquet,1,frio,1.407294
+3_meses (2024-01..03),Q6_percentiles_propina,parquet,2,caliente,1.058448
+3_meses (2024-01..03),Q6_percentiles_propina,parquet,3,caliente,1.299342
+3_meses (2024-01..03),Q6_percentiles_propina,parquet,4,caliente,1.171631
+3_meses (2024-01..03),Q6_percentiles_propina,parquet,5,caliente,1.372491
+3_meses (2024-01..03),Q6_percentiles_propina,tabla,1,frio,1.637554
+3_meses (2024-01..03),Q6_percentiles_propina,tabla,2,caliente,1.643606
+3_meses (2024-01..03),Q6_percentiles_propina,tabla,3,caliente,1.360264
+3_meses (2024-01..03),Q6_percentiles_propina,tabla,4,caliente,1.520366
+3_meses (2024-01..03),Q6_percentiles_propina,tabla,5,caliente,1.515281
+3_meses (2024-01..03),Q7_filtro_selectivo,parquet,1,frio,0.173230
+3_meses (2024-01..03),Q7_filtro_selectivo,parquet,2,caliente,0.166077
+3_meses (2024-01..03),Q7_filtro_selectivo,parquet,3,caliente,0.156369
+3_meses (2024-01..03),Q7_filtro_selectivo,parquet,4,caliente,0.170230
+3_meses (2024-01..03),Q7_filtro_selectivo,parquet,5,caliente,0.236973
+3_meses (2024-01..03),Q7_filtro_selectivo,tabla,1,frio,0.125010
+3_meses (2024-01..03),Q7_filtro_selectivo,tabla,2,caliente,0.014051
+3_meses (2024-01..03),Q7_filtro_selectivo,tabla,3,caliente,0.015671
+3_meses (2024-01..03),Q7_filtro_selectivo,tabla,4,caliente,0.017042
+3_meses (2024-01..03),Q7_filtro_selectivo,tabla,5,caliente,0.018198
+2026 (8 meses),Q1_conteo_total,parquet,1,frio,0.066162
+2026 (8 meses),Q1_conteo_total,parquet,2,caliente,0.083441
+2026 (8 meses),Q1_conteo_total,parquet,3,caliente,0.077977
+2026 (8 meses),Q1_conteo_total,parquet,4,caliente,0.073969
+2026 (8 meses),Q1_conteo_total,parquet,5,caliente,0.069060
+2026 (8 meses),Q1_conteo_total,tabla,1,frio,0.021690
+2026 (8 meses),Q1_conteo_total,tabla,2,caliente,0.004645
+2026 (8 meses),Q1_conteo_total,tabla,3,caliente,0.004394
+2026 (8 meses),Q1_conteo_total,tabla,4,caliente,0.004384
+2026 (8 meses),Q1_conteo_total,tabla,5,caliente,0.005908
+2026 (8 meses),Q2_agregacion_por_mes,parquet,1,frio,0.555003
+2026 (8 meses),Q2_agregacion_por_mes,parquet,2,caliente,0.477582
+2026 (8 meses),Q2_agregacion_por_mes,parquet,3,caliente,0.464205
+2026 (8 meses),Q2_agregacion_por_mes,parquet,4,caliente,0.452364
+2026 (8 meses),Q2_agregacion_por_mes,parquet,5,caliente,0.486534
+2026 (8 meses),Q2_agregacion_por_mes,tabla,1,frio,0.854780
+2026 (8 meses),Q2_agregacion_por_mes,tabla,2,caliente,0.235085
+2026 (8 meses),Q2_agregacion_por_mes,tabla,3,caliente,0.221147
+2026 (8 meses),Q2_agregacion_por_mes,tabla,4,caliente,0.216948
+2026 (8 meses),Q2_agregacion_por_mes,tabla,5,caliente,0.197351
+2026 (8 meses),Q3_promedio_por_tipo,parquet,1,frio,0.594697
+2026 (8 meses),Q3_promedio_por_tipo,parquet,2,caliente,0.468999
+2026 (8 meses),Q3_promedio_por_tipo,parquet,3,caliente,0.550139
+2026 (8 meses),Q3_promedio_por_tipo,parquet,4,caliente,0.543822
+2026 (8 meses),Q3_promedio_por_tipo,parquet,5,caliente,0.606023
+2026 (8 meses),Q3_promedio_por_tipo,tabla,1,frio,0.707215
+2026 (8 meses),Q3_promedio_por_tipo,tabla,2,caliente,0.088479
+2026 (8 meses),Q3_promedio_por_tipo,tabla,3,caliente,0.094244
+2026 (8 meses),Q3_promedio_por_tipo,tabla,4,caliente,0.089073
+2026 (8 meses),Q3_promedio_por_tipo,tabla,5,caliente,0.090149
+2026 (8 meses),Q4_distribucion_por_hora,parquet,1,frio,0.972485
+2026 (8 meses),Q4_distribucion_por_hora,parquet,2,caliente,1.015531
+2026 (8 meses),Q4_distribucion_por_hora,parquet,3,caliente,0.985798
+2026 (8 meses),Q4_distribucion_por_hora,parquet,4,caliente,0.901867
+2026 (8 meses),Q4_distribucion_por_hora,parquet,5,caliente,0.940797
+2026 (8 meses),Q4_distribucion_por_hora,tabla,1,frio,0.893546
+2026 (8 meses),Q4_distribucion_por_hora,tabla,2,caliente,0.107527
+2026 (8 meses),Q4_distribucion_por_hora,tabla,3,caliente,0.108837
+2026 (8 meses),Q4_distribucion_por_hora,tabla,4,caliente,0.109739
+2026 (8 meses),Q4_distribucion_por_hora,tabla,5,caliente,0.111963
+2026 (8 meses),Q5_top_zonas,parquet,1,frio,0.482363
+2026 (8 meses),Q5_top_zonas,parquet,2,caliente,0.688168
+2026 (8 meses),Q5_top_zonas,parquet,3,caliente,0.437936
+2026 (8 meses),Q5_top_zonas,parquet,4,caliente,0.364024
+2026 (8 meses),Q5_top_zonas,parquet,5,caliente,0.415400
+2026 (8 meses),Q5_top_zonas,tabla,1,frio,0.544016
+2026 (8 meses),Q5_top_zonas,tabla,2,caliente,0.060057
+2026 (8 meses),Q5_top_zonas,tabla,3,caliente,0.067915
+2026 (8 meses),Q5_top_zonas,tabla,4,caliente,0.067356
+2026 (8 meses),Q5_top_zonas,tabla,5,caliente,0.067865
+2026 (8 meses),Q6_percentiles_propina,parquet,1,frio,4.068692
+2026 (8 meses),Q6_percentiles_propina,parquet,2,caliente,4.483709
+2026 (8 meses),Q6_percentiles_propina,parquet,3,caliente,4.184985
+2026 (8 meses),Q6_percentiles_propina,parquet,4,caliente,3.709717
+2026 (8 meses),Q6_percentiles_propina,parquet,5,caliente,3.830192
+2026 (8 meses),Q6_percentiles_propina,tabla,1,frio,4.090130
+2026 (8 meses),Q6_percentiles_propina,tabla,2,caliente,3.751957
+2026 (8 meses),Q6_percentiles_propina,tabla,3,caliente,4.321360
+2026 (8 meses),Q6_percentiles_propina,tabla,4,caliente,3.529174
+2026 (8 meses),Q6_percentiles_propina,tabla,5,caliente,3.916313
+2026 (8 meses),Q7_filtro_selectivo,parquet,1,frio,0.575430
+2026 (8 meses),Q7_filtro_selectivo,parquet,2,caliente,0.508478
+2026 (8 meses),Q7_filtro_selectivo,parquet,3,caliente,0.500225
+2026 (8 meses),Q7_filtro_selectivo,parquet,4,caliente,0.510817
+2026 (8 meses),Q7_filtro_selectivo,parquet,5,caliente,0.567574
+2026 (8 meses),Q7_filtro_selectivo,tabla,1,frio,0.442435
+2026 (8 meses),Q7_filtro_selectivo,tabla,2,caliente,0.047441
+2026 (8 meses),Q7_filtro_selectivo,tabla,3,caliente,0.055288
+2026 (8 meses),Q7_filtro_selectivo,tabla,4,caliente,0.053474
+2026 (8 meses),Q7_filtro_selectivo,tabla,5,caliente,0.053223
+2024 (12 meses),Q1_conteo_total,parquet,1,frio,0.148004
+2024 (12 meses),Q1_conteo_total,parquet,2,caliente,0.187547
+2024 (12 meses),Q1_conteo_total,parquet,3,caliente,0.190364
+2024 (12 meses),Q1_conteo_total,parquet,4,caliente,0.170393
+2024 (12 meses),Q1_conteo_total,parquet,5,caliente,0.204661
+2024 (12 meses),Q1_conteo_total,tabla,1,frio,0.026530
+2024 (12 meses),Q1_conteo_total,tabla,2,caliente,0.006240
+2024 (12 meses),Q1_conteo_total,tabla,3,caliente,0.007323
+2024 (12 meses),Q1_conteo_total,tabla,4,caliente,0.006152
+2024 (12 meses),Q1_conteo_total,tabla,5,caliente,0.005979
+2024 (12 meses),Q2_agregacion_por_mes,parquet,1,frio,0.708449
+2024 (12 meses),Q2_agregacion_por_mes,parquet,2,caliente,0.570853
+2024 (12 meses),Q2_agregacion_por_mes,parquet,3,caliente,0.681788
+2024 (12 meses),Q2_agregacion_por_mes,parquet,4,caliente,0.702169
+2024 (12 meses),Q2_agregacion_por_mes,parquet,5,caliente,0.627832
+2024 (12 meses),Q2_agregacion_por_mes,tabla,1,frio,1.038010
+2024 (12 meses),Q2_agregacion_por_mes,tabla,2,caliente,0.281556
+2024 (12 meses),Q2_agregacion_por_mes,tabla,3,caliente,0.250211
+2024 (12 meses),Q2_agregacion_por_mes,tabla,4,caliente,0.262703
+2024 (12 meses),Q2_agregacion_por_mes,tabla,5,caliente,0.261037
+2024 (12 meses),Q3_promedio_por_tipo,parquet,1,frio,0.638619
+2024 (12 meses),Q3_promedio_por_tipo,parquet,2,caliente,0.589671
+2024 (12 meses),Q3_promedio_por_tipo,parquet,3,caliente,0.619876
+2024 (12 meses),Q3_promedio_por_tipo,parquet,4,caliente,0.617271
+2024 (12 meses),Q3_promedio_por_tipo,parquet,5,caliente,0.576921
+2024 (12 meses),Q3_promedio_por_tipo,tabla,1,frio,0.869136
+2024 (12 meses),Q3_promedio_por_tipo,tabla,2,caliente,0.121357
+2024 (12 meses),Q3_promedio_por_tipo,tabla,3,caliente,0.117627
+2024 (12 meses),Q3_promedio_por_tipo,tabla,4,caliente,0.122574
+2024 (12 meses),Q3_promedio_por_tipo,tabla,5,caliente,0.121147
+2024 (12 meses),Q4_distribucion_por_hora,parquet,1,frio,1.304005
+2024 (12 meses),Q4_distribucion_por_hora,parquet,2,caliente,1.124535
+2024 (12 meses),Q4_distribucion_por_hora,parquet,3,caliente,1.251808
+2024 (12 meses),Q4_distribucion_por_hora,parquet,4,caliente,1.378209
+2024 (12 meses),Q4_distribucion_por_hora,parquet,5,caliente,1.181369
+2024 (12 meses),Q4_distribucion_por_hora,tabla,1,frio,1.127543
+2024 (12 meses),Q4_distribucion_por_hora,tabla,2,caliente,0.140814
+2024 (12 meses),Q4_distribucion_por_hora,tabla,3,caliente,0.141523
+2024 (12 meses),Q4_distribucion_por_hora,tabla,4,caliente,0.140145
+2024 (12 meses),Q4_distribucion_por_hora,tabla,5,caliente,0.136667
+2024 (12 meses),Q5_top_zonas,parquet,1,frio,0.563458
+2024 (12 meses),Q5_top_zonas,parquet,2,caliente,0.534354
+2024 (12 meses),Q5_top_zonas,parquet,3,caliente,0.490064
+2024 (12 meses),Q5_top_zonas,parquet,4,caliente,0.473632
+2024 (12 meses),Q5_top_zonas,parquet,5,caliente,0.508029
+2024 (12 meses),Q5_top_zonas,tabla,1,frio,0.607574
+2024 (12 meses),Q5_top_zonas,tabla,2,caliente,0.064987
+2024 (12 meses),Q5_top_zonas,tabla,3,caliente,0.068305
+2024 (12 meses),Q5_top_zonas,tabla,4,caliente,0.069574
+2024 (12 meses),Q5_top_zonas,tabla,5,caliente,0.068898
+2024 (12 meses),Q6_percentiles_propina,parquet,1,frio,6.021179
+2024 (12 meses),Q6_percentiles_propina,parquet,2,caliente,5.324535
+2024 (12 meses),Q6_percentiles_propina,parquet,3,caliente,5.589983
+2024 (12 meses),Q6_percentiles_propina,parquet,4,caliente,5.910024
+2024 (12 meses),Q6_percentiles_propina,parquet,5,caliente,4.853345
+2024 (12 meses),Q6_percentiles_propina,tabla,1,frio,5.088088
+2024 (12 meses),Q6_percentiles_propina,tabla,2,caliente,5.292552
+2024 (12 meses),Q6_percentiles_propina,tabla,3,caliente,5.465717
+2024 (12 meses),Q6_percentiles_propina,tabla,4,caliente,4.627181
+2024 (12 meses),Q6_percentiles_propina,tabla,5,caliente,4.718849
+2024 (12 meses),Q7_filtro_selectivo,parquet,1,frio,0.567262
+2024 (12 meses),Q7_filtro_selectivo,parquet,2,caliente,0.495326
+2024 (12 meses),Q7_filtro_selectivo,parquet,3,caliente,0.518028
+2024 (12 meses),Q7_filtro_selectivo,parquet,4,caliente,0.475844
+2024 (12 meses),Q7_filtro_selectivo,parquet,5,caliente,0.509347
+2024 (12 meses),Q7_filtro_selectivo,tabla,1,frio,0.460515
+2024 (12 meses),Q7_filtro_selectivo,tabla,2,caliente,0.062223
+2024 (12 meses),Q7_filtro_selectivo,tabla,3,caliente,0.058383
+2024 (12 meses),Q7_filtro_selectivo,tabla,4,caliente,0.056809
+2024 (12 meses),Q7_filtro_selectivo,tabla,5,caliente,0.058409
+2024+2026 (20 meses),Q1_conteo_total,parquet,1,frio,0.233533
+2024+2026 (20 meses),Q1_conteo_total,parquet,2,caliente,0.228647
+2024+2026 (20 meses),Q1_conteo_total,parquet,3,caliente,0.216027
+2024+2026 (20 meses),Q1_conteo_total,parquet,4,caliente,0.205705
+2024+2026 (20 meses),Q1_conteo_total,parquet,5,caliente,0.230935
+2024+2026 (20 meses),Q1_conteo_total,tabla,1,frio,0.094767
+2024+2026 (20 meses),Q1_conteo_total,tabla,2,caliente,0.097582
+2024+2026 (20 meses),Q1_conteo_total,tabla,3,caliente,0.103515
+2024+2026 (20 meses),Q1_conteo_total,tabla,4,caliente,0.101370
+2024+2026 (20 meses),Q1_conteo_total,tabla,5,caliente,0.103675
+2024+2026 (20 meses),Q2_agregacion_por_mes,parquet,1,frio,1.059498
+2024+2026 (20 meses),Q2_agregacion_por_mes,parquet,2,caliente,1.268294
+2024+2026 (20 meses),Q2_agregacion_por_mes,parquet,3,caliente,1.173353
+2024+2026 (20 meses),Q2_agregacion_por_mes,parquet,4,caliente,0.971790
+2024+2026 (20 meses),Q2_agregacion_por_mes,parquet,5,caliente,0.884354
+2024+2026 (20 meses),Q2_agregacion_por_mes,tabla,1,frio,1.551003
+2024+2026 (20 meses),Q2_agregacion_por_mes,tabla,2,caliente,0.426464
+2024+2026 (20 meses),Q2_agregacion_por_mes,tabla,3,caliente,0.459362
+2024+2026 (20 meses),Q2_agregacion_por_mes,tabla,4,caliente,0.435734
+2024+2026 (20 meses),Q2_agregacion_por_mes,tabla,5,caliente,0.449523
+2024+2026 (20 meses),Q3_promedio_por_tipo,parquet,1,frio,0.894473
+2024+2026 (20 meses),Q3_promedio_por_tipo,parquet,2,caliente,0.834022
+2024+2026 (20 meses),Q3_promedio_por_tipo,parquet,3,caliente,0.899839
+2024+2026 (20 meses),Q3_promedio_por_tipo,parquet,4,caliente,0.923552
+2024+2026 (20 meses),Q3_promedio_por_tipo,parquet,5,caliente,0.891357
+2024+2026 (20 meses),Q3_promedio_por_tipo,tabla,1,frio,1.072255
+2024+2026 (20 meses),Q3_promedio_por_tipo,tabla,2,caliente,0.292534
+2024+2026 (20 meses),Q3_promedio_por_tipo,tabla,3,caliente,0.342489
+2024+2026 (20 meses),Q3_promedio_por_tipo,tabla,4,caliente,0.276949
+2024+2026 (20 meses),Q3_promedio_por_tipo,tabla,5,caliente,0.240683
+2024+2026 (20 meses),Q4_distribucion_por_hora,parquet,1,frio,1.778534
+2024+2026 (20 meses),Q4_distribucion_por_hora,parquet,2,caliente,1.771241
+2024+2026 (20 meses),Q4_distribucion_por_hora,parquet,3,caliente,1.769075
+2024+2026 (20 meses),Q4_distribucion_por_hora,parquet,4,caliente,1.808626
+2024+2026 (20 meses),Q4_distribucion_por_hora,parquet,5,caliente,1.863356
+2024+2026 (20 meses),Q4_distribucion_por_hora,tabla,1,frio,1.565758
+2024+2026 (20 meses),Q4_distribucion_por_hora,tabla,2,caliente,0.286261
+2024+2026 (20 meses),Q4_distribucion_por_hora,tabla,3,caliente,0.305458
+2024+2026 (20 meses),Q4_distribucion_por_hora,tabla,4,caliente,0.329457
+2024+2026 (20 meses),Q4_distribucion_por_hora,tabla,5,caliente,0.304184
+2024+2026 (20 meses),Q5_top_zonas,parquet,1,frio,0.814118
+2024+2026 (20 meses),Q5_top_zonas,parquet,2,caliente,0.775035
+2024+2026 (20 meses),Q5_top_zonas,parquet,3,caliente,0.703203
+2024+2026 (20 meses),Q5_top_zonas,parquet,4,caliente,0.744053
+2024+2026 (20 meses),Q5_top_zonas,parquet,5,caliente,0.811125
+2024+2026 (20 meses),Q5_top_zonas,tabla,1,frio,0.912325
+2024+2026 (20 meses),Q5_top_zonas,tabla,2,caliente,0.200999
+2024+2026 (20 meses),Q5_top_zonas,tabla,3,caliente,0.225272
+2024+2026 (20 meses),Q5_top_zonas,tabla,4,caliente,0.267094
+2024+2026 (20 meses),Q5_top_zonas,tabla,5,caliente,0.232673
+2024+2026 (20 meses),Q6_percentiles_propina,parquet,1,frio,8.497148
+2024+2026 (20 meses),Q6_percentiles_propina,parquet,2,caliente,8.159157
+2024+2026 (20 meses),Q6_percentiles_propina,parquet,3,caliente,8.059149
+2024+2026 (20 meses),Q6_percentiles_propina,parquet,4,caliente,9.054286
+2024+2026 (20 meses),Q6_percentiles_propina,parquet,5,caliente,7.609401
+2024+2026 (20 meses),Q6_percentiles_propina,tabla,1,frio,8.153176
+2024+2026 (20 meses),Q6_percentiles_propina,tabla,2,caliente,6.752362
+2024+2026 (20 meses),Q6_percentiles_propina,tabla,3,caliente,8.589469
+2024+2026 (20 meses),Q6_percentiles_propina,tabla,4,caliente,7.997419
+2024+2026 (20 meses),Q6_percentiles_propina,tabla,5,caliente,9.134725
+2024+2026 (20 meses),Q7_filtro_selectivo,parquet,1,frio,0.925372
+2024+2026 (20 meses),Q7_filtro_selectivo,parquet,2,caliente,0.938071
+2024+2026 (20 meses),Q7_filtro_selectivo,parquet,3,caliente,0.854479
+2024+2026 (20 meses),Q7_filtro_selectivo,parquet,4,caliente,0.897032
+2024+2026 (20 meses),Q7_filtro_selectivo,parquet,5,caliente,0.870308
+2024+2026 (20 meses),Q7_filtro_selectivo,tabla,1,frio,0.713270
+2024+2026 (20 meses),Q7_filtro_selectivo,tabla,2,caliente,0.096498
+2024+2026 (20 meses),Q7_filtro_selectivo,tabla,3,caliente,0.096873
+2024+2026 (20 meses),Q7_filtro_selectivo,tabla,4,caliente,0.122415
+2024+2026 (20 meses),Q7_filtro_selectivo,tabla,5,caliente,0.109264
