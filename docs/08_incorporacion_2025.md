@@ -1,9 +1,11 @@
-# Ejercicio 8 - Incorporacion de 2025
+# Ejercicio 8 (8.1 - 8.4) - Incorporacion de 2025
 
 Punto de partida: datos de 2024 y 2026 descargados y tablero del Ejercicio 7 construido sobre ellos
-([`docs/07_indicadores_metabase.md`](07_indicadores_metabase.md)).
+([`docs/07_indicadores_metabase.md`](07_indicadores_metabase.md)). La evolucion de los indicadores, los
+cambios visibles con los tres anios y sus consultas (8.5 - 8.7) estan en
+[`docs/08_evolucion_2024_2026.md`](08_evolucion_2024_2026.md).
 
-## 8.1 Pasos ejecutados
+## 8.1 y 8.2 Descarga de 2025 sin volver a bajar lo existente
 
 ```bash
 docker exec lab8-lab python scripts/download_data.py --years 2025                 # descarga solo 2025
@@ -25,7 +27,7 @@ docker exec lab8-lab python scripts/metabase_dashboard.py --publico             
 Nada de lo existente se volvio a descargar ni se modifico: el script omite los archivos que ya
 existen con el mismo tamano que en el servidor.
 
-## 8.2 Que hubo que cambiar
+## 8.3 Las consultas siguen funcionando? Que hubo que cambiar
 
 **En el codigo de descarga y de indicadores: nada.** El anio es un parametro (`--years`), las rutas usan
 comodines (`*/*.parquet`) y el anio/mes se derivan del nombre del archivo, asi que 2025 aparecio en
@@ -43,7 +45,7 @@ Lo que si aparecio al revisar las consultas anteriores con 2025 presente:
    esos ejercicios.
 3. **Metabase** necesito un reinicio para ver la base reconstruida (driver DuckDB, ver 7.5).
 
-## 8.3 Validacion de 2025
+### Validacion de 2025 con las consultas del Ejercicio 5
 
 | Comprobacion | Resultado |
 |---|---|
@@ -52,7 +54,7 @@ Lo que si aparecio al revisar las consultas anteriores con 2025 presente:
 | Esquema | 2025 trae `cbd_congestion_fee` desde enero (20 de 32 archivos yellow: todo 2025 y 2026); `request_source` sigue solo en jun-ago 2026; `union_by_name` rellena con NULL en 2024 |
 | Continuidad | Ningun mes faltante entre 2024-01 y 2026-08 (P1 y P2 sin huecos) |
 
-## 8.4 El tablero antes y despues
+## 8.4 Indicadores y visualizaciones actualizados a los tres anios
 
 Antes (2024 + 2026): [`img/07_tablero_2024_2026.png`](img/07_tablero_2024_2026.png). Despues:
 
@@ -66,11 +68,11 @@ Que cambio al agregar 2025:
 - **P1 (demanda)**: 2025 es el anio mas alto en 6 de los 8 meses comparables (en enero y abril lo iguala o supera 2026); la "subida 2024 -> 2026" del
   Ej. 7 es en realidad una subida en 2025 (+12,5 %) y una leve baja en 2026 (-1,6 %).
 - **P10 (calidad)**: aparece un tramo de mayo a noviembre de 2025 con 10-13 % de registros yellow
-  descartados, invisible con solo 2024 y 2026 (ver Ej. 9).
+  descartados, invisible con solo 2024 y 2026 (ver [`08_evolucion_2024_2026.md`](08_evolucion_2024_2026.md), 8.5.6).
 - **P5 (pagos)**: el paso de tarjeta a "Flex / sin dato" ocurrio en 2025, no en 2026.
 - KPI: 113,2 M viajes validos, 3.284,9 M USD, ticket 29,01 USD, verde 1,31 %.
 
-## 8.5 Que caracteristicas del diseno lo hicieron posible
+### Que caracteristicas del diseno lo hicieron posible
 
 1. **Anio como parametro y rutas con comodin** (`data/raw/<tipo>/<anio>/`): agregar un anio es agregar
    una carpeta.

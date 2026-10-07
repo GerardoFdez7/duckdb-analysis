@@ -50,14 +50,15 @@ Las consultas viven en `sql/` y se ejecutan con `scripts/run_sql.py` (o desde lo
 | 4. Analisis exploratorio (2026) | `sql/04_eda.sql` | `docs/04_analisis_exploratorio.md` | `notebooks/04_analisis_exploratorio.ipynb` |
 | 5. Validacion 2024 + 2026 | `sql/05_validacion_2024_2026.sql` | `docs/05_incorporacion_2024.md` | `notebooks/03_05_consultas_parquet.ipynb` |
 | 6. Parquet vs tabla DuckDB | `sql/06_benchmark.sql` | `docs/06_benchmark.md` | `notebooks/06_benchmark.ipynb` |
-| 7. Indicadores y tablero Metabase | `sql/07_indicadores.sql` | `docs/07_indicadores_metabase.md` | `notebooks/07_09_indicadores.ipynb` |
-| 8. Incorporacion de 2025 | (mismas consultas) | `docs/08_incorporacion_2025.md` | `notebooks/07_09_indicadores.ipynb` |
-| 9. Evolucion 2024-2026 | `sql/09_evolucion.sql` | `docs/09_evolucion_2024_2026.md` | `notebooks/07_09_indicadores.ipynb` |
+| 7. Indicadores y tablero Metabase | `sql/07_indicadores.sql` | `docs/07_indicadores_metabase.md` | `notebooks/07_08_indicadores.ipynb` |
+| 8. Incorporacion de 2025 (8.1 - 8.4) | (mismas consultas) | `docs/08_incorporacion_2025.md` | `notebooks/07_08_indicadores.ipynb` |
+| 8. Evolucion 2024-2026 (8.5 - 8.7) | `sql/08_evolucion.sql` | `docs/08_evolucion_2024_2026.md` | `notebooks/07_08_indicadores.ipynb` |
+| 9. Discusion | - | `docs/09_discusion.md` | - |
 
 ```bash
 docker exec lab8-lab python scripts/run_sql.py sql/03_exploracion_parquet.sql
 docker exec lab8-lab python scripts/run_sql.py sql/05_validacion_2024_2026.sql
-docker exec lab8-lab python scripts/run_sql.py sql/09_evolucion.sql --db data/processed/indicadores.duckdb --solo-lectura
+docker exec lab8-lab python scripts/run_sql.py sql/08_evolucion.sql --db data/processed/indicadores.duckdb --solo-lectura
 ```
 
 ## Como generar el tablero de Metabase
@@ -98,7 +99,7 @@ docker exec lab8-lab python scripts/run_sql.py sql/05_validacion_2024_2026.sql
 docker exec lab8-lab python scripts/benchmark.py
 docker exec lab8-lab python scripts/build_indicadores.py
 docker exec lab8-lab python scripts/metabase_dashboard.py
-docker exec lab8-lab python scripts/run_sql.py sql/09_evolucion.sql --db data/processed/indicadores.duckdb --solo-lectura
+docker exec lab8-lab python scripts/run_sql.py sql/08_evolucion.sql --db data/processed/indicadores.duckdb --solo-lectura
 # Notebooks: abrir http://127.0.0.1:8888 y ejecutar notebooks/*.ipynb (Run All),
 # o por linea de comandos:
 docker exec lab8-lab jupyter nbconvert --to notebook --execute --inplace /workspace/notebooks/04_analisis_exploratorio.ipynb
