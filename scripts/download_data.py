@@ -17,6 +17,7 @@ Uso:
 
 Los archivos se guardan en:
     data/raw/<tipo>/<anio>/<nombre-original>.parquet
+    data/raw/zonas/taxi_zone_lookup.csv   (catalogo de zonas, para los indicadores)
 
 Comportamiento:
   - La TLC publica cada mes con varias semanas de atraso, por lo que no todos
@@ -36,6 +37,7 @@ import requests
 ANIO_POR_DEFECTO = 2026
 TIPOS_TAXI = ("yellow", "green")
 URL_BASE = "https://d37ci6vzurychx.cloudfront.net/trip-data"
+URL_ZONAS = "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv"
 DIR_DESTINO = Path(__file__).resolve().parent.parent / "data" / "raw"  # independiente del cwd
 
 TIEMPO_ESPERA = 60          # segundos por peticion
@@ -105,6 +107,21 @@ def descargar_archivo(url: str, destino: Path) -> int:
     raise requests.RequestException(f"no se pudo descargar {url}: {ultimo_error}")
 
 
+def descargar_zonas() -> bool:
+    """Descarga el catalogo de zonas TLC (LocationID -> Borough/Zone) si no existe."""
+    destino = DIR_DESTINO / "zonas" / "taxi_zone_lookup.csv"
+    if destino.exists() and destino.stat().st_size > 0:
+        print(f"\nCatalogo de zonas ya existe, se omite -> {destino}")
+        return True
+    try:
+        escritos = descargar_archivo(URL_ZONAS, destino)
+    except requests.RequestException as error:
+        print(f"\nCatalogo de zonas: ERROR: {error}")
+        return False
+    print(f"\nCatalogo de zonas listo ({formato_tamanio(escritos)}) -> {destino}")
+    return True
+
+
 def descargar(tipo: str, anio: int) -> dict:
     """Descarga todos los meses publicados de un tipo de taxi para un anio."""
     print(f"\n=== {tipo.upper()} {anio} ===")
@@ -162,6 +179,9 @@ def main() -> int:
             total["omitidos"] += resumen["omitidos"]
             total["no_publicados"] += [f"{tipo} {m}" for m in resumen["no_publicados"]]
             total["fallidos"] += [f"{tipo} {m}" for m in resumen["fallidos"]]
+
+    if not descargar_zonas():
+        total["fallidos"].append("zonas")
 
     print("\n" + "=" * 60)
     print("RESUMEN")
