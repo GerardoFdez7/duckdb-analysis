@@ -37,3 +37,25 @@ elimina el "en mi maquina funciona": un cambio de version de DuckDB o pandas pue
 tipos inferidos, redondeos o rendimiento, lo que haria incomparables los benchmarks.
 Ademas el ambiente se documenta como codigo (versionado), se levanta con un solo comando
 y no contamina el sistema del analista.
+
+## 1.7 Nota: espacio en disco con Docker Desktop en Windows
+
+Docker Desktop guarda imagenes, contenedores y cache en un disco virtual
+(`%LOCALAPPDATA%\Docker\wsl\disk\docker_data.vhdx`) que **crece pero no se achica solo**:
+borrar imagenes o cache libera espacio dentro de Docker, no en Windows. Al reproducir el lab con
+el disco C: casi lleno, el primer `--build` (~5 GB temporales) agoto el espacio a mitad de la
+construccion y dejo la imagen `lab` con archivos de Python truncados (el contenedor se reiniciaba en
+bucle con `ImportError` de `tornado`). Recomendaciones:
+
+1. Tener ~8 GB libres antes del primer `docker compose up --build -d` y usar `docker compose up -d`
+   en los arranques siguientes.
+2. Si una construccion se corto por falta de espacio, reconstruir sin cache:
+   `docker compose build --no-cache lab` (o `metabase`).
+3. Para devolver el espacio a Windows (PowerShell como administrador, con Docker abierto):
+   ```powershell
+   docker builder prune -af
+   wsl -d docker-desktop -u root fstrim -av      # marca los bloques libres del disco virtual
+   # cerrar Docker Desktop y ejecutar: wsl --shutdown
+   # luego en diskpart: select vdisk file="<ruta al .vhdx>" / attach vdisk readonly / compact vdisk / detach vdisk
+   ```
+   Sin el `fstrim` previo, `compact vdisk` no recupera nada. En este equipo paso de 13,1 GB a 8,4 GB.
