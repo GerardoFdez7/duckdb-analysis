@@ -26,7 +26,11 @@ GROUP BY ALL ORDER BY tipo, anio;
 SELECT name, count(DISTINCT regexp_extract(file_name, '_(\d{4}-\d{2})', 1)) AS meses_con_columna
 FROM parquet_schema('/workspace/data/raw/yellow/*/*.parquet')
 WHERE name <> 'schema'
-GROUP BY name HAVING meses_con_columna < 20 ORDER BY name;
+GROUP BY name
+-- Total de meses calculado, no fijo: con un "< 20" (2024+2026) la columna cbd_congestion_fee
+-- desaparecia del resultado al agregar 2025 (Ejercicio 8).
+HAVING meses_con_columna < (SELECT count(DISTINCT file_name) FROM parquet_metadata('/workspace/data/raw/yellow/*/*.parquet'))
+ORDER BY name;
 
 -- Q5 (5.7) Consulta de Ej.3 (calidad, yellow) reutilizada SIN cambios de logica, solo con otro glob, por anio
 SELECT year(tpep_pickup_datetime) AS anio_pickup,
