@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Ejecuta un archivo .sql con DuckDB e imprime cada resultado.
 
-Uso: python scripts/run_sql.py sql/03_exploracion_parquet.sql [--db RUTA.duckdb]
+Uso: python scripts/run_sql.py sql/03_exploracion_parquet.sql [--db RUTA.duckdb] [--solo-lectura]
+--solo-lectura permite leer una base que Metabase tiene abierta (p. ej. indicadores.duckdb).
 Las sentencias se separan por ';'. Los comentarios '-- Qn ...' se muestran como titulo.
 """
 import argparse
@@ -31,8 +32,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("archivo")
     ap.add_argument("--db", default=":memory:")
+    ap.add_argument("--solo-lectura", action="store_true")
     a = ap.parse_args()
-    ejecutar(a.archivo, duckdb.connect(a.db))
+    ejecutar(a.archivo, duckdb.connect(a.db, read_only=a.solo_lectura))
     return 0
 
 
